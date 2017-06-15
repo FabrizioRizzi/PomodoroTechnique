@@ -3,9 +3,17 @@
   "version": "0.0.1",
   "description": "Electron App based on the pomodoro technique",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabrizioRizzi/PomodoroTechnique.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startDev": "electron .",
+    "build": "electron-packager . --platform=win32 --arch=ia32 --electron-version=1.6.11"
   },
   "author": "Fabrizio Rizzi",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
 }

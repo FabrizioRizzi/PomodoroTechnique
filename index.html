@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Title</title>
+</head>
+<body ng-app="PomodoroTechnique">
+<div class="MainController" ng-controller="MainController as vm">
+    <div class="Title">
+        <img src="./images/pomodorotechnique-logo.png" />
+    </div>
+    <nav>
+        <ul class="Navbar">
+            <li ng-click="vm.setPomodoro()">Pomodoro</li>
+            <li ng-click="vm.setShortBreak()">Short Break</li>
+            <li ng-click="vm.setLongBreak()">Long Break</li>
+        </ul>
+    </nav>
+    <div ng-if="vm.pomodoro" class="Main">
+        <count-down-timer start-from="vm.pomodoroTime" />
+    </div>
+    <div ng-if="vm.shortBreak" class="Main">
+        <count-down-timer start-from="vm.shortBreakTime" />
+    </div>
+    <div ng-if="vm.longBreak" class="Main">
+        <count-down-timer start-from="vm.longBreakTime" />
+    </div>
+</div>
+<script src="./node_modules/angular/angular.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

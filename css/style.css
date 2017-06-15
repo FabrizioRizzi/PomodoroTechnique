@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.Title {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #AAA;
+}
+.Main {
+    padding: 20px;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0;
+    background-color: #CCC;
+}
+
+.Navbar li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 2vw;
+}
+
+.CountDownTimer {
+    text-align: center;
+    font-size: 10vw;
+}
+
+.CountDownTimer p {
+    margin: 0;
+}
+
+
+.CountDownTimer button {
+    border: 0;
+    border-radius: 5%;
+    background-color: #e4242b;
+    cursor: pointer;
+    padding:20px;
+    font-size: 3vw;
+    color: #EEE;
+    outline:none;
+    margin: 0 10px;
+}
+
+.CountDownTimer button:hover {
+    background-color: #EEE;
+    color: #e4242b;
+}
