@@ -1,0 +1,15 @@
+<div id='CountDownTimer'>
+    <nav>
+        <ul class="Navbar">
+            <li ng-click="vm.setPomodoro(vm.pomodoroTime.pomodoro)">Pomodoro</li>
+            <li ng-click="vm.setPomodoro(vm.pomodoroTime.shortBreakTime)">Short Break</li>
+            <li ng-click="vm.setPomodoro(vm.pomodoroTime.longBreakTime)">Long Break</li>
+        </ul>
+    </nav>
+    <span id='demo' ng-class="vm.paused"></span>
+    <div class="Buttons">
+        <span class="Start" ng-click='vm.startTimer()'>Start</span>
+        <span class="Stop" ng-click='vm.stopTimer()'>Stop</span>
+        <span class="Reset" ng-click='vm.resetTimer()'>Reset</span>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+#CountDownTimer {
+    text-align: center;
+    font-size: 10vw;
+}
+
+#CountDownTimer .Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vw;
+    margin: 0;
+    background-color: #CCC;
+}
+
+#CountDownTimer .Navbar li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 2.5vw;
+}
+
+#CountDownTimer .Paused {
+    color: #999;
+}
+
+#CountDownTimer .Buttons {
+    font-size: 2vw;
+    color: #EEE;
+    margin: 2vw;
+}
+
+#CountDownTimer .Buttons span {
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 2vw;
+}
+
+#CountDownTimer .Buttons .Start {
+    background-color: #4bac45;
+}
+
+#CountDownTimer .Buttons .Stop {
+    background-color: #e4242b;
+}
+
+#CountDownTimer .Buttons .Reset {
+    background-color: #333;
+}
+
+#CountDownTimer .Buttons span:hover {
+    background-color: #EEE;
+    color: #333;
+}

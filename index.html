@@ -3,31 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="./components/countDownTimer/countDownTimer.css">
+    <link rel="stylesheet" href="./components/task/task.css">
+    <title>Pomodoro Technique</title>
 </head>
 <body ng-app="PomodoroTechnique">
 <div class="MainController" ng-controller="MainController as vm">
     <div class="Title">
-        <img src="./images/pomodorotechnique-logo.png" />
+        <img src="./images/pomodorotechnique-logo.png"/>
     </div>
-    <nav>
-        <ul class="Navbar">
-            <li ng-click="vm.setPomodoro()">Pomodoro</li>
-            <li ng-click="vm.setShortBreak()">Short Break</li>
-            <li ng-click="vm.setLongBreak()">Long Break</li>
-        </ul>
-    </nav>
-    <div ng-if="vm.pomodoro" class="Main">
-        <count-down-timer start-from="vm.pomodoroTime" />
+    <div class="CountDownTimerContainer">
+        <count-down-timer pomodoro-time="vm.pomodoroTime"></count-down-timer>
     </div>
-    <div ng-if="vm.shortBreak" class="Main">
-        <count-down-timer start-from="vm.shortBreakTime" />
-    </div>
-    <div ng-if="vm.longBreak" class="Main">
-        <count-down-timer start-from="vm.longBreakTime" />
+    <div class="TaskContainer">
+        <task></task>
     </div>
 </div>
 <script src="./node_modules/angular/angular.min.js"></script>
 <script src="./js/script.js"></script>
+<script src="./components/countDownTimer/countDownTimer.js"></script>
+<script src="./components/task/task.js"></script>
 </body>
 </html>

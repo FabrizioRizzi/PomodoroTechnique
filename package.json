@@ -1,6 +1,6 @@
 {
   "name": "pomodorotechnique",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Electron App based on the pomodoro technique",
   "main": "main.js",
   "repository": {

@@ -8,52 +8,23 @@ html, body {
 
 .Title {
     margin: 0;
-    padding: 10px;
+    padding: 2vw;
     text-align: center;
     background-color: #AAA;
 }
-.Main {
-    padding: 20px;
+
+.Title img {
+    width: 20vw;
 }
 
-.Navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    margin: 0;
-    background-color: #CCC;
+.CountDownTimerContainer {
+    display: block;
+    width: 50%;
+    float: left;
 }
 
-.Navbar li {
-    cursor: pointer;
-    list-style: none;
-    font-size: 2vw;
-}
-
-.CountDownTimer {
-    text-align: center;
-    font-size: 10vw;
-}
-
-.CountDownTimer p {
-    margin: 0;
-}
-
-
-.CountDownTimer button {
-    border: 0;
-    border-radius: 5%;
-    background-color: #e4242b;
-    cursor: pointer;
-    padding:20px;
-    font-size: 3vw;
-    color: #EEE;
-    outline:none;
-    margin: 0 10px;
-}
-
-.CountDownTimer button:hover {
-    background-color: #EEE;
-    color: #e4242b;
+.TaskContainer {
+    display: block;
+    width: 50%;
+    float: right;
 }
