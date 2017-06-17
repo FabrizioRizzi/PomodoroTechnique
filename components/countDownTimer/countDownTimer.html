@@ -6,7 +6,7 @@
             <li ng-click="vm.setPomodoro(vm.pomodoroTime.longBreakTime)">Long Break</li>
         </ul>
     </nav>
-    <span id='demo' ng-class="vm.paused"></span>
+    <span id='display' ng-class="vm.state"></span>
     <div class="Buttons">
         <span class="Start" ng-click='vm.startTimer()'>Start</span>
         <span class="Stop" ng-click='vm.stopTimer()'>Stop</span>

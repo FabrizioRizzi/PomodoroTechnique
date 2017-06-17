@@ -6,10 +6,11 @@ app.component('countDownTimer', {
   controllerAs: 'vm',
   controller: function ($scope) {
     let vm = $scope.vm;
+    let audio = new Audio('./sound/wahoo.mp3');
 
     vm.$onInit = function () {
 
-      let display = document.querySelector('#demo');
+      let display = document.querySelector('#display');
 
       vm.setPomodoro = (startFrom) => {
         !!vm.stopTimer && vm.stopTimer();
@@ -21,18 +22,24 @@ app.component('countDownTimer', {
 
         vm.startTimer = () => {
           timer.start();
-          vm.paused = '';
+          vm.state = '';
         };
 
         vm.stopTimer = () => {
           timer.stop();
-          vm.paused = 'Paused';
+          vm.state = 'Paused';
         };
 
         vm.resetTimer = () => {
           timer.reset();
-          vm.paused = 'Paused';
+          vm.state = 'Paused';
         };
+
+        vm.finished = () => {
+          vm.state = 'Finished';
+          $scope.$apply();
+        };
+
         vm.resetTimer();
       };
 
@@ -83,6 +90,8 @@ app.component('countDownTimer', {
             } else {
               that.diff = 0;
               that.running = false;
+              audio.play();
+              vm.finished();
             }
 
             obj = that.parse(that.diff);

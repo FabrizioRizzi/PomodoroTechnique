@@ -9,11 +9,22 @@
   },
   "scripts": {
     "startDev": "electron .",
-    "build": "electron-packager . --platform=win32 --arch=ia32 --electron-version=1.6.11"
+    "pack": "build --dir",
+    "dist": "build"
   },
   "author": "Fabrizio Rizzi",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.6.4"
+  },
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^19.4.2"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
   }
 }

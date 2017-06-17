@@ -18,14 +18,39 @@
     font-size: 2.5vw;
 }
 
+#CountDownTimer #display {
+    border-radius: 2vw;
+    margin: 2vw;
+    display: block;
+}
+
 #CountDownTimer .Paused {
     color: #999;
+}
+
+#CountDownTimer .Finished {
+    animation: 1s infinite evidence ;
+}
+
+@keyframes evidence {
+    0% {
+        background-color: transparent;
+        color: #333;
+    }
+    50% {
+        background-color: #333;
+        color: red;
+    }
+    100% {
+        background-color: transparent;
+        color: #333;
+    }
 }
 
 #CountDownTimer .Buttons {
     font-size: 2vw;
     color: #EEE;
-    margin: 2vw;
+    margin: 3vw;
 }
 
 #CountDownTimer .Buttons span {
