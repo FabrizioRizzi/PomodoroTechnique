@@ -5,7 +5,7 @@ app.component('countDownTimer', {
   },
   controllerAs: 'vm',
   controller: function ($scope) {
-    let vm = $scope.vm;
+    let vm = this;
     let audio = new Audio('./sound/wahoo.mp3');
 
     vm.$onInit = function () {

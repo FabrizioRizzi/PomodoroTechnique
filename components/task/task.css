@@ -1,5 +1,5 @@
 #Task {
-
+    font-size: 2vw;
 }
 
 #Task .Navbar {
@@ -15,4 +15,66 @@
     cursor: pointer;
     list-style: none;
     font-size: 2.5vw;
+}
+
+#Task .Container {
+    padding: 2vw;
+}
+
+#Task .Container .NewTask  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Task .Container .NewTask input, button {
+    font-size: 1.7vw;
+    outline: none;
+}
+
+#Task .Task {
+    padding: 1.5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.3vw solid grey;
+}
+
+#Task .Task:last-child {
+    border-bottom: 0;
+}
+
+#Task .Task .TaskText {
+    width: 50%;
+    overflow-wrap: break-word;
+}
+
+#Task .Buttons {
+    border-radius: 5%;
+    border: 0;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    color: #FFF;
+}
+
+#Task .Buttons.AddButton {
+    padding: 2vw 3vw;
+}
+
+#Task .Buttons.AddButton, .Buttons.Add {
+    background-color: #4bac45;
+}
+
+#Task .Buttons.Remove {
+    background-color: #333;
+}
+
+#Task .Buttons.Elimina {
+    background-color: #e4242b;
+}
+
+#Task .Buttons:hover {
+    background-color: #EEE;
+    color: #333;
 }

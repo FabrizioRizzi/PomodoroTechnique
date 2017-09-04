@@ -4,5 +4,25 @@
             <li>Task</li>
         </ul>
     </nav>
-    <span>Task</span>
+    <div class="Container">
+        <div class="NewTask">
+            <input type="text" placeholder="Scrivi qui il tuo task..." ng-model="vm.task"/>
+            <button class="Buttons AddButton" ng-click="vm.addTask()">Add</button>
+        </div>
+        <div ng-show="vm.tasks.length">
+            <div class="TaskTitle">
+                <h2>Elenco tasks:</h2>
+            </div>
+            <div class="Tasks">
+                <div class="Task" ng-repeat="task in vm.tasks track by $index">
+                    <div class="TaskText">
+                        <span>{{task.name}} ({{task.count}})</span>
+                    </div>
+                    <button class="Buttons Add" ng-click="vm.addCount($index)">+</button>
+                    <button class="Buttons Remove" ng-click="vm.removeCount($index)">-</button>
+                    <button class="Buttons Elimina" ng-click="vm.eliminaTask($index)">Elimina</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

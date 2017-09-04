@@ -8,13 +8,13 @@ html, body {
 
 .Title {
     margin: 0;
-    padding: 2vw;
+    padding-top: 2vw;
     text-align: center;
     background-color: #AAA;
 }
 
 .Title img {
-    width: 20vw;
+    width: 18vw;
 }
 
 .CountDownTimerContainer {
